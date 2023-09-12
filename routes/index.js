@@ -1,6 +1,6 @@
+const book = require('../controller');
+
 const router = require('express').Router();
 
-router.get('/books', (req, res) => {
-  res.json({ message: 'book router' });
-});
+router.get('/books', book);
 module.exports = router;
