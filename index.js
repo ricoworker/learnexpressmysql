@@ -2,10 +2,10 @@ const express = require('express');
 const app = express();
 const port = 5000;
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('learnexpresssql', 'root', '', {
-  host: 'localhost', // or the hostname of your MySQL server
-  dialect: 'mysql',
-});
+// const sequelize = new Sequelize('learnexpresssql', 'root', '', {
+//   host: 'localhost', // or the hostname of your MySQL server
+//   dialect: 'mysql',
+// });
 
 const router = require('./routes/index');
 app.use(express.json());
